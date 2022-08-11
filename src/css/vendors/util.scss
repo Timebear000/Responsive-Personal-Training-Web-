@@ -1,0 +1,30 @@
+@use '../abstracts/mixin' as *;
+
+@mixin clcikEnvent {
+  .click{
+    top:46px;
+  
+    span{
+      position: absolute;
+      margin-top: 12px;
+  
+      &:first-child{
+        transform: rotate(-40deg);
+      }
+      &:nth-child(2){
+        opacity: 0;
+        margin: 0;
+      }
+      &:last-child{
+        transform: rotate(40deg);
+        top:0;
+      }
+    }
+  }
+  nav .nav-list.open{
+    right:0;
+  }
+}
+@include app{
+  @include clcikEnvent;
+}

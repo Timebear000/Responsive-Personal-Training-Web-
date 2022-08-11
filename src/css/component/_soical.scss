@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+.social a {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: $text-color;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: rgba(255,255,255,0.1);
+  margin-bottom: 35px;
+  &:hover{
+    transform: scale(1.1);
+    background: $primary;
+    transition: .4s;
+  }
+}
+

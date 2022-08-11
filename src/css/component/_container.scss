@@ -1,0 +1,57 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixin' as *;
+.container { 
+  padding-top:190px;
+
+  .hero-text {
+    margin-bottom: 40px;
+    h1{
+      color:white;
+      font-size:47px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin: 20px 0px 20px;
+    }
+    h3 {
+      color:$text-color;
+      font-weight: 400;
+      font-size: 17px;
+    }
+    p {
+      width: 440px;
+      max-width: 100%;
+      color:$text-color;
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    button{
+      color:$text-color;
+      background-color: $primary;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 8px 30px;
+      border: 2px solid $primary;
+      border-radius: 30px;
+      cursor: pointer;
+      &:hover {
+        background: transparent;
+        border: 2px solid  $primary;
+        color: $primary;
+        transition: .4s;
+        cursor: pointer;
+      }
+    }
+
+  }
+  .bottom{
+    margin-top: 243px;
+    padding-bottom: 40px;
+    p{
+      color:$text-color;
+      letter-spacing: 2px;
+      font-size: 15px;
+    }
+  }
+}
